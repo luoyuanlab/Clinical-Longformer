@@ -18,9 +18,9 @@ model = AutoModelForMaskedLM.from_pretrained("yikuan8/Clinical-Longformer")
 ### Citing
 If you find our implementation helps, please consider citing this :)
 ```
-@article{li2022clinicallongformer,
+@article{li2022clinical,
   title={Clinical-Longformer and Clinical-BigBird: Transformers for long clinical sequences},
-  author={Li, Yikuan and Wehbe, Ramsey and Ahmad, Faraz and Wang, Hanyin and Luo, Yuan},
+  author={Li, Yikuan and Wehbe, Ramsey M and Ahmad, Faraz S and Wang, Hanyin and Luo, Yuan},
   journal={arXiv preprint arXiv:2201.11838},
   year={2022}
 }
