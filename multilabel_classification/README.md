@@ -6,5 +6,5 @@ Data Accesses:
 - OpenI: https://openi.nlm.nih.gov/
 - MIMIC-CXR: https://physionet.org/content/mimic-cxr/2.0.0/
 
-Please format the labels and CXR reports as OpenIExample.csv and MIMICExample.csv
+Please format the labels and CXR reports as OpenIExample.csv and MIMICExample.csv. 
 
