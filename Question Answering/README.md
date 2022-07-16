@@ -31,7 +31,7 @@ CUDA_VISIBLE_DEVICES=5 python run_qa.py \
   --dataset_name emrQA \
   --do_train \
   --do_eval \
-  --do_predict\
+  --do_predict \
   --per_device_train_batch_size 4 \
   --fp16 \
   --fp16_backend amp \
