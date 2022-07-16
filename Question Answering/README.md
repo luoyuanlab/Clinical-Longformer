@@ -18,3 +18,6 @@ emrQA
 │   │   medication-train-sampled-0.2.json
 │   │   relation-train-sampled-0.05.json
 ``` 
+4. Git Clone the [Transformer repo](https://github.com/huggingface/transformers). 
+5. Download the squad.py and change the file directories as your own.
+6. 
