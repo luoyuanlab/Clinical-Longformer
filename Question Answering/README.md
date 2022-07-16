@@ -18,6 +18,10 @@ emrQA
 │   │   medication-train-sampled-0.2.json
 │   │   relation-train-sampled-0.05.json
 ``` 
-4. Git Clone the [Transformer repo](https://github.com/huggingface/transformers). 
+4. Git Clone the [Transformer repo](https://github.com/huggingface/transformers/tree/v4.9.0). 
 5. Download the [squad.py](https://github.com/luoyuanlab/Clinical-Longformer/blob/main/Question%20Answering/squad.py) and change [file directories](https://github.com/luoyuanlab/Clinical-Longformer/blob/9988755254333d04ac7c18f655bd938aa018eea5/Question%20Answering/squad.py#L55) as your own.
-6. 
+6. We will run this [script](https://github.com/huggingface/transformers/blob/v4.9.0/examples/pytorch/question-answering/run_qa.py) of the Transformers repo for a QA task training. Change [here](https://github.com/huggingface/transformers/blob/72aee83ced5f31302c5e331d896412737287f976/examples/pytorch/question-answering/run_qa.py#L264) to: 
+```
+raw_datasets = load_dataset('/YOUR/PATH/squad.py')
+```
+8. 
