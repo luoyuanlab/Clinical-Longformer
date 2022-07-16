@@ -19,5 +19,5 @@ emrQA
 │   │   relation-train-sampled-0.05.json
 ``` 
 4. Git Clone the [Transformer repo](https://github.com/huggingface/transformers). 
-5. Download the [squad.py](https://github.com/luoyuanlab/Clinical-Longformer/blob/main/Question%20Answering/squad.py) and change [file directories] as your own.
+5. Download the [squad.py](https://github.com/luoyuanlab/Clinical-Longformer/blob/main/Question%20Answering/squad.py) and change [file directories](https://github.com/luoyuanlab/Clinical-Longformer/blob/9988755254333d04ac7c18f655bd938aa018eea5/Question%20Answering/squad.py#L55) as your own.
 6. 
