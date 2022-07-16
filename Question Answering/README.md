@@ -5,16 +5,15 @@ We used emrQA as an example to illustrate how Clinical-Longformer can be applied
 3. On running the previous 2 steps, you shall have such directory structure.
 ```
 emrQA  
-│
-│   │   medication-dev.json
-│   │   medication-test.json
-│   │   medication-train.json
-│   │   relation-dev.json
-│   │   relation-test.json
-│   │   relation-train.json
-│   │   risk-dataset-dev.json
-│   │   risk-dataset-test.json
-│   │   risk-dataset-train.json
+│   medication-dev.json
+│   medication-test.json
+│   medication-train.json
+│   relation-dev.json
+│   relation-test.json
+│   relation-train.json
+│   risk-dataset-dev.json
+│   risk-dataset-test.json
+│   risk-dataset-train.json
 └───us
 │   │   medication-train-sampled-0.2.json
 │   │   relation-train-sampled-0.05.json
