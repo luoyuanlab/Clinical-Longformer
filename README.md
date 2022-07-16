@@ -14,7 +14,7 @@ tokenizer = AutoTokenizer.from_pretrained("yikuan8/Clinical-Longformer")
 model = AutoModelForMaskedLM.from_pretrained("yikuan8/Clinical-Longformer")
 ```
 [Here](https://huggingface.co/yikuan8/Clinical-Longformer) is the homepage of our model on HuggingFace model hub.
-We also provide the usage examples of classification, named entity recognition and question answering tasks.
+We also provide the usage examples of [classification](https://github.com/luoyuanlab/Clinical-Longformer/tree/main/classification), [named entity recognition](https://github.com/luoyuanlab/Clinical-Longformer/tree/main/NER) and [question answering](https://github.com/luoyuanlab/Clinical-Longformer/tree/main/Question%20Answering) tasks.
 
 ### Citing
 If you find our implementation helps, please consider citing this :)
