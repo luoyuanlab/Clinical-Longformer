@@ -27,7 +27,7 @@ raw_datasets = load_dataset('/YOUR/PATH/squad.py')
 7. RUN
 ```
 CUDA_VISIBLE_DEVICES=5 python run_qa.py \
-  --model_name_or_path yikuan8/Clinical-Longformer\
+  --model_name_or_path yikuan8/Clinical-Longformer \
   --dataset_name emrQA \
   --do_train \
   --do_eval \
