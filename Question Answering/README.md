@@ -24,4 +24,28 @@ emrQA
 ```
 raw_datasets = load_dataset('/YOUR/PATH/squad.py')
 ```
-8. 
+7. RUN
+```
+CUDA_VISIBLE_DEVICES=5 python run_qa.py \
+  --model_name_or_path yikuan8/Clinical-Longformer\
+  --dataset_name emrQA \
+  --do_train \
+  --do_eval \
+  --do_predict\
+  --per_device_train_batch_size 4 \
+  --fp16 \
+  --fp16_backend amp \
+  --per_device_eval_batch_size 8 \
+  --learning_rate 3e-5 \
+  --num_train_epochs 4 \
+  --max_train_samples 128 \
+  --max_eval_samples 128 \
+  --max_predict_samples 128 \
+  --max_seq_length 4096 \
+  --ignore_data_skip \
+  --evaluation_strategy epoch \
+  --save_strategy epoch \
+  --overwrite_output_dir \
+  --overwrite_cache \
+  --output_dir /YOUR/PATH/emrQA_cb/
+```
