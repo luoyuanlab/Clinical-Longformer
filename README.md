@@ -32,7 +32,7 @@ If you find our implementation helps, please consider citing this :)
 ```
 
 ### Questions
-Please email yikuanli2018@u.northwestern.edu or raise a issue.
+Please email yikuanli2018@u.northwestern.edu (Yikuan) or raise a issue.
 
 
 
