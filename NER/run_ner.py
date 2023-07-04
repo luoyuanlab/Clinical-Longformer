@@ -377,18 +377,23 @@ def main():
                 if word_idx is None:
                     label_ids.append(-100)
                 # We set the label for the first token of each word.
+
                 elif word_idx != previous_word_idx:
-                    label_ids.append(label_to_id[label[word_idx]])
+                    label_ids.append(label_to_id[label[word_idx]] if label[word_idx] in label_to_id else label_to_id["O"]) 
+                 
                 # For the other tokens in a word, we set the label to either the current label or -100, depending on
                 # the label_all_tokens flag.
                 else:
-                    label_ids.append(label_to_id[label[word_idx]] if data_args.label_all_tokens else -100)
+                    if label[word_idx] in label_to_id:
+                     
+                        label_ids.append(label_to_id[label[word_idx]] if data_args.label_all_tokens else -100)
+                    else:
+                        label_ids.append(label_to_id["O"] if data_args.label_all_tokens else -100)
                 previous_word_idx = word_idx
 
             labels.append(label_ids)
         tokenized_inputs["labels"] = labels
         return tokenized_inputs
-
     if training_args.do_train:
         if "train" not in raw_datasets:
             raise ValueError("--do_train requires a train dataset")
